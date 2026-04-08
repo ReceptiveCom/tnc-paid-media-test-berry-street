@@ -1,0 +1,680 @@
+---
+import Layout from "../layouts/Layout.astro";
+const IMG = import.meta.env.DEV ? "/images" : "/c/berry-street/images";
+---
+
+<Layout title="Top Nutrition Coaching vs. Berry Street | Side-by-side comparison">
+  <Fragment slot="head">
+    <meta name="description" content="Considering Berry Street? Compare dietitian vetting, insurance verification, and provider continuity side by side. Your exact cost confirmed before you book." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </Fragment>
+
+  <!-- HERO -->
+  <section class="bs-hero">
+    <div class="bs-container">
+      <div class="bs-hero-inner">
+
+        <div class="bs-hero-text">
+          <div class="bs-hero-badge">
+            <span class="bs-t-eyebrow">Comparing Dietitian Platforms</span>
+          </div>
+
+          <h1 class="bs-t-h1 bs-hero-title">
+            Top Nutrition Coaching<br>vs. Berry Street
+          </h1>
+
+          <p class="bs-hero-subtitle">
+            We accept 1.7% of dietitians who apply. We confirm your exact cost before you book. And you work with the same RD every session.
+          </p>
+
+          <div class="bs-hero-ctas">
+            <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="bs-btn bs-btn-primary bs-btn-lg">Find my dietitian</a>
+            <a href="#comparison" class="bs-btn bs-btn-secondary">See the comparison ↓</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="bs-hero-vs-card">
+            <div class="bs-vs-pill">
+              <div class="bs-vs-pill-tnc">
+                <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/6703d9fe64c092cc8093fd59_Logo%20TNC.svg" alt="Top Nutrition Coaching" style="height:36px;filter:brightness(0) invert(1);">
+              </div>
+              <div class="bs-vs-pill-vs">vs.</div>
+              <div class="bs-vs-pill-bs">
+                <img src={`${IMG}/berry-street-logo.png`} alt="Berry Street" style="height:28px;" />
+              </div>
+            </div>
+
+            <div class="bs-vs-stat-row">
+              <div class="bs-vs-stat">
+                <div class="bs-vs-stat-number">1.7%</div>
+                <div class="bs-vs-stat-label">of RDs accepted<br>into our network</div>
+              </div>
+              <div class="bs-vs-stat">
+                <div class="bs-vs-stat-number">$0</div>
+                <div class="bs-vs-stat-label">with most major<br>insurance plans</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INSURANCE LOGOS -->
+  <div class="bs-insurer-strip">
+    <div class="bs-container">
+      <div class="bs-insurer-strip-inner">
+        <span class="bs-insurer-label">Covered by major insurers</span>
+        <div class="bs-insurer-logos">
+          <span class="bs-insurer-logo">aetna</span>
+          <span class="bs-insurer-logo">BCBS</span>
+          <span class="bs-insurer-logo">Cigna</span>
+          <span class="bs-insurer-logo">UnitedHealthcare</span>
+          <span class="bs-insurer-logo">Anthem</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <section class="bs-section bs-comparison" id="comparison">
+    <div class="bs-container">
+      <div style="margin-bottom:40px;">
+        <p class="bs-t-eyebrow" style="margin-bottom:8px;">Side by side</p>
+        <h2 class="bs-t-h2">How we compare.</h2>
+        <p class="bs-t-body" style="margin-top:8px;">Where each platform is stronger — including where Berry Street wins.</p>
+      </div>
+
+      <div class="bs-comparison-table-wrap">
+        <table class="bs-comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="bs-col-tnc">
+                <div style="display:flex;align-items:center;justify-content:center;gap:8px;">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="#58AD5A"/><path d="M5 9.5L7.5 12L13 7" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Top Nutrition Coaching
+                </div>
+              </th>
+              <th class="bs-col-bs">Berry Street</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dietitian vetting</td>
+              <td class="bs-col-tnc">Top 1.7% of applicants accepted</td>
+              <td class="bs-col-bs">1,000+ RDs in network</td>
+            </tr>
+            <tr>
+              <td>Provider continuity</td>
+              <td class="bs-col-tnc">Same named RD every session</td>
+              <td class="bs-col-bs">Browse and select from directory</td>
+            </tr>
+            <tr>
+              <td>Cost transparency</td>
+              <td class="bs-col-tnc">Exact cost confirmed before session 1</td>
+              <td class="bs-col-bs">94% pay $0 per Berry Street website</td>
+            </tr>
+            <tr>
+              <td>Condition matching</td>
+              <td class="bs-col-tnc">Hand-matched to your specific condition</td>
+              <td class="bs-col-bs">Filter providers by specialty</td>
+            </tr>
+            <tr>
+              <td>Between-session support</td>
+              <td class="bs-col-tnc">24/7 text access to your RD</td>
+              <td class="bs-col-bs">In-app chat and AI meal logging</td>
+            </tr>
+            <tr>
+              <td>Lab testing</td>
+              <td class="bs-col-bs-neutral">Not currently available</td>
+              <td class="bs-col-bs-win">Available</td>
+            </tr>
+            <tr>
+              <td>App &amp; digital tools</td>
+              <td class="bs-col-bs-neutral">Healthie platform</td>
+              <td class="bs-col-bs-win">Custom app with AI charting</td>
+            </tr>
+            <tr>
+              <td>Partnerships</td>
+              <td class="bs-col-bs-neutral">Independent</td>
+              <td class="bs-col-bs-win">WeightWatchers, Mayo Clinic Diet</td>
+            </tr>
+            <tr>
+              <td>Verified reviews</td>
+              <td class="bs-col-tnc">4.8★ on Trustpilot</td>
+              <td class="bs-col-bs">4.7★ on Trustpilot</td>
+            </tr>
+            <tr>
+              <td>Insurance accepted</td>
+              <td class="bs-col-tnc">BCBS, Aetna, Cigna, UHC, Anthem</td>
+              <td class="bs-col-bs">BCBS, Aetna, Cigna, UHC, Anthem + more</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="bs-comparison-note">Berry Street data from their public website and app store listings, April 2026.</p>
+    </div>
+  </section>
+
+  <!-- RD QUALITY -->
+  <section class="bs-section--lg bs-stat-section" id="quality">
+    <div class="bs-container">
+      <div class="bs-stat-section-inner">
+
+        <div class="bs-stat-image-col">
+          <div class="bs-stat-image-frame">
+            <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/6995fb26dccae08e1a79ea08_girl-side-face-results-insights-landing.avif" alt="Top Nutrition Coaching registered dietitian">
+          </div>
+          <div class="bs-stat-badge">
+            <div class="bs-stat-badge-number">1.7%</div>
+            <div class="bs-stat-badge-text">of applicants accepted<br>into our network</div>
+          </div>
+        </div>
+
+        <div>
+          <p class="bs-t-eyebrow" style="margin-bottom:12px;">Dietitian quality</p>
+          <h2 class="bs-t-h2" style="margin-bottom:16px;">We built a smaller network<br>on purpose.</h2>
+          <p class="bs-t-body-lg" style="margin-bottom:32px;">Every RD in our network passed a clinical screening, specialty review, and a patient communication assessment before seeing a single patient. Not a checkbox — a filter designed to keep the network small.</p>
+
+          <ul class="bs-stat-checklist">
+            <li>
+              <div class="bs-stat-check-icon"></div>
+              <div class="bs-stat-checklist-body"><strong>Registered Dietitians only.</strong> Every provider in our network holds the RD credential — a graduate degree, supervised practice, and a national board exam. No health coaches, no exceptions.</div>
+            </li>
+            <li>
+              <div class="bs-stat-check-icon"></div>
+              <div class="bs-stat-checklist-body"><strong>Matched to your condition.</strong> Whether it's A1C management, PCOS, menopause, or gut health — you're matched to an RD who works with patients like you every day.</div>
+            </li>
+            <li>
+              <div class="bs-stat-check-icon"></div>
+              <div class="bs-stat-checklist-body"><strong>Accountability is tracked.</strong> We monitor response times, session completion, and patient-reported outcomes. RDs who don't meet our standards don't stay in the network.</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INSURANCE -->
+  <section class="bs-section bs-insurance" id="insurance">
+    <div class="bs-container">
+      <div class="bs-insurance-inner">
+
+        <div>
+          <p class="bs-t-eyebrow" style="margin-bottom:12px;">Cost transparency</p>
+          <h2 class="bs-t-h2" style="margin-bottom:16px;">Your exact cost,<br>before you book.</h2>
+          <p class="bs-t-body-lg" style="margin-bottom:40px;">
+            We verify your insurance during sign-up. You see a confirmed number before you see a calendar.
+          </p>
+
+          <div class="bs-insurance-steps">
+            <div class="bs-insurance-step">
+              <div class="bs-step-number">1</div>
+              <div>
+                <div class="bs-step-title">Enter your insurance during sign-up.</div>
+                <div class="bs-step-body">We check your coverage in real time — before you book anything.</div>
+              </div>
+            </div>
+            <div class="bs-insurance-step">
+              <div class="bs-step-number">2</div>
+              <div>
+                <div class="bs-step-title">See your exact cost per session.</div>
+                <div class="bs-step-body">What your plan covers and what you owe — a number you can plan around.</div>
+              </div>
+            </div>
+            <div class="bs-insurance-step">
+              <div class="bs-step-number">3</div>
+              <div>
+                <div class="bs-step-title">What we quote is what you pay.</div>
+                <div class="bs-step-body">If anything changes with your coverage, we call you first. Self-pay starts at $59/session.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(28,74,54,0.12);">
+          <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/69956138c7b79341c0b1bc43_phone-view-screen-landing-v1.avif" alt="Insurance cost confirmed on phone before your first session" style="width:100%;display:block;">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RD CONTINUITY + CARDS -->
+  <section class="bs-section bs-continuity" id="continuity">
+    <div class="bs-container">
+      <p class="bs-t-eyebrow" style="margin-bottom:12px;">Provider continuity</p>
+      <h2 class="bs-t-h2" style="margin-bottom:16px;">Same RD, every session.</h2>
+      <p class="bs-t-body-lg" style="max-width:560px;margin-bottom:48px;">
+        You see your dietitian's name, photo, and specialties before your first session. You choose who you work with, and that person reads your intake before you show up.
+      </p>
+
+      <div class="bs-rd-cards-grid">
+        <div class="bs-rd-card">
+          <div class="bs-rd-card-photo">
+            <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/699fecaeb0b3c5c2c4ab659c_cover-photo-card-dietitian-example-01.avif" alt="Kat Benson, RD">
+          </div>
+          <div class="bs-rd-card-body">
+            <div class="bs-rd-card-name">Kat Benson</div>
+            <div class="bs-rd-card-credential">RD</div>
+            <div class="bs-rd-card-stars">
+              <div class="bs-rd-card-star-row"><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span></div>
+              <span class="bs-rd-card-rating-text">4.8 · 320+ clients</span>
+            </div>
+            <div class="bs-rd-card-tags">
+              <span class="bs-rd-tag">Weight management</span>
+              <span class="bs-rd-tag">PCOS</span>
+              <span class="bs-rd-tag">GLP-1 support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bs-rd-card">
+          <div class="bs-rd-card-photo">
+            <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/699fecad47cde566e358c0ad_cover-photo-card-dietitian-example-02.avif" alt="Aston Dommel, RD">
+          </div>
+          <div class="bs-rd-card-body">
+            <div class="bs-rd-card-name">Aston Dommel</div>
+            <div class="bs-rd-card-credential">RD</div>
+            <div class="bs-rd-card-stars">
+              <div class="bs-rd-card-star-row"><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span></div>
+              <span class="bs-rd-card-rating-text">4.9 · 300+ clients</span>
+            </div>
+            <div class="bs-rd-card-tags">
+              <span class="bs-rd-tag">Sports nutrition</span>
+              <span class="bs-rd-tag">GLP-1 muscle preservation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bs-rd-card">
+          <div class="bs-rd-card-photo">
+            <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/699fecadb2b257bbb79fd1a0_cover-photo-card-dietitian-example-03.avif" alt="Jordan Hill, RD">
+          </div>
+          <div class="bs-rd-card-body">
+            <div class="bs-rd-card-name">Jordan Hill</div>
+            <div class="bs-rd-card-credential">RD</div>
+            <div class="bs-rd-card-stars">
+              <div class="bs-rd-card-star-row"><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span></div>
+              <span class="bs-rd-card-rating-text">4.8 · 150+ clients</span>
+            </div>
+            <div class="bs-rd-card-tags">
+              <span class="bs-rd-tag">GI health</span>
+              <span class="bs-rd-tag">Ulcerative colitis</span>
+              <span class="bs-rd-tag">Gut health</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bs-rd-card">
+          <div class="bs-rd-card-photo">
+            <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/699fecae6a94e852fe95c7f6_cover-photo-card-dietitian-example-04.avif" alt="Michelle Rodgers, RD">
+          </div>
+          <div class="bs-rd-card-body">
+            <div class="bs-rd-card-name">Michelle Rodgers</div>
+            <div class="bs-rd-card-credential">RD</div>
+            <div class="bs-rd-card-stars">
+              <div class="bs-rd-card-star-row"><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span><span class="bs-rd-star">★</span></div>
+              <span class="bs-rd-card-rating-text">4.9 · 220+ clients</span>
+            </div>
+            <div class="bs-rd-card-tags">
+              <span class="bs-rd-tag">Post-bariatric nutrition</span>
+              <span class="bs-rd-tag">Weight management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bs-rd-cards-cta">
+        <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="bs-btn bs-btn-secondary">Find the RD who specializes in your condition</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="bs-section bs-reviews">
+    <div class="bs-container">
+      <div class="bs-reviews-header">
+        <div>
+          <p class="bs-t-eyebrow" style="margin-bottom:8px;">Verified reviews</p>
+          <h2 class="bs-t-h2">What our patients say</h2>
+        </div>
+        <div class="bs-trust-row">
+          <div class="bs-trust-stars">
+            <div class="bs-star"></div><div class="bs-star"></div><div class="bs-star"></div><div class="bs-star"></div><div class="bs-star"></div>
+          </div>
+          <span class="bs-t-small"><strong>Trustpilot</strong> · 4.8 stars</span>
+        </div>
+      </div>
+
+      <div class="bs-reviews-grid">
+        <div class="bs-review-card">
+          <span class="bs-review-condition">PCOS</span>
+          <div class="bs-review-stars">
+            <span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span>
+          </div>
+          <p class="bs-review-text">"She understood exactly what I was dealing with — there was never a moment where I felt like I had to explain myself."</p>
+          <div class="bs-review-attribution">
+            <div class="bs-review-initials">VP</div>
+            <div>
+              <div class="bs-review-name">Verified patient</div>
+              <div class="bs-review-source">Trustpilot</div>
+            </div>
+            <div class="bs-review-tp-badge"><div class="bs-tp-dot"></div></div>
+          </div>
+        </div>
+
+        <div class="bs-review-card">
+          <span class="bs-review-condition">Diabetes</span>
+          <div class="bs-review-stars">
+            <span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span>
+          </div>
+          <p class="bs-review-text">"My RD knew my labs, my schedule, and never gave me advice I could've found on Google. This is what I expected from the start."</p>
+          <div class="bs-review-attribution">
+            <div class="bs-review-initials">VP</div>
+            <div>
+              <div class="bs-review-name">Verified patient</div>
+              <div class="bs-review-source">Trustpilot</div>
+            </div>
+            <div class="bs-review-tp-badge"><div class="bs-tp-dot"></div></div>
+          </div>
+        </div>
+
+        <div class="bs-review-card">
+          <span class="bs-review-condition">Insurance · Aetna</span>
+          <div class="bs-review-stars">
+            <span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span><span class="bs-review-star">★</span>
+          </div>
+          <p class="bs-review-text">"The billing was confirmed before my first session and I haven't been surprised by a charge once. I wish I'd done this sooner."</p>
+          <div class="bs-review-attribution">
+            <div class="bs-review-initials">VP</div>
+            <div>
+              <div class="bs-review-name">Verified patient</div>
+              <div class="bs-review-source">Trustpilot</div>
+            </div>
+            <div class="bs-review-tp-badge"><div class="bs-tp-dot"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="bs-footer-cta">
+    <div class="bs-container">
+      <div class="bs-footer-cta-inner">
+        <h2 class="bs-footer-cta-title">A dietitian who knows your condition.<br>Covered by your insurance.</h2>
+        <p class="bs-footer-cta-subtitle">
+          See your dietitian's name and reviews before you book. Your exact cost confirmed before your first session.
+        </p>
+        <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="bs-btn bs-btn-white bs-btn-lg">Find my dietitian</a>
+        <p class="bs-footer-cta-note">Takes 2 minutes · Most patients pay $0 · Cancel anytime</p>
+      </div>
+      <div class="bs-footer-insurer-logos">
+        <span class="bs-footer-insurer-logo">aetna</span>
+        <span class="bs-footer-insurer-logo">BCBS</span>
+        <span class="bs-footer-insurer-logo">Cigna</span>
+        <span class="bs-footer-insurer-logo">UnitedHealthcare</span>
+        <span class="bs-footer-insurer-logo">Anthem</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY CTA (mobile) -->
+  <div class="bs-sticky-cta-bar" slot="after-main">
+    <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="bs-btn bs-btn-primary">Find my dietitian</a>
+  </div>
+
+</Layout>
+
+<style is:global>
+  :root {
+    --bs-forest:      #1C4A36;
+    --bs-sapien:      #547666;
+    --bs-leaf:        #58AD5A;
+    --bs-mint:        #F0F9F5;
+    --bs-bloom:       #FF5C3B;
+    --bs-green-grey:  #F5F5F1;
+    --bs-black:       #08120A;
+    --bs-white:       #FFFFFF;
+    --bs-border:      #D8E4DD;
+    --bs-font-head: 'Plus Jakarta Sans', sans-serif;
+    --bs-font-body: 'Inter', sans-serif;
+    --bs-r-sm: 8px; --bs-r-md: 12px; --bs-r-lg: 20px; --bs-r-xl: 28px;
+  }
+
+  /* ── Webflow CSS/JS Overrides ─── */
+  html{overflow-x:hidden}
+  body{overflow-x:hidden;background:var(--bs-white)!important;font-family:var(--bs-font-body)!important;color:var(--bs-black)!important;-webkit-font-smoothing:antialiased}
+  main{margin-top:0!important;background:var(--bs-white)!important}
+  blockquote{background:transparent!important;border:none!important;padding:0!important;margin:0!important}
+
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+
+  .bs-container{max-width:1100px;margin:0 auto;padding:0 24px}
+  .bs-section{padding:80px 0}
+  .bs-section--lg{padding:100px 0}
+
+  /* Typography */
+  .bs-t-eyebrow{font-family:var(--bs-font-body);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--bs-sapien)}
+  .bs-t-h1{font-family:var(--bs-font-head);font-size:clamp(36px,5vw,56px);font-weight:800;line-height:1.08;color:var(--bs-black)}
+  .bs-t-h2{font-family:var(--bs-font-head);font-size:clamp(28px,3.5vw,40px);font-weight:800;line-height:1.15;color:var(--bs-black)}
+  .bs-t-body-lg{font-size:18px;line-height:1.65;color:var(--bs-sapien)}
+  .bs-t-body{font-size:16px;line-height:1.6;color:var(--bs-sapien)}
+  .bs-t-small{font-size:14px;line-height:1.5;color:var(--bs-sapien)}
+
+  /* Buttons */
+  .bs-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--bs-font-body);font-size:15px;font-weight:600;border-radius:100px;padding:14px 28px;cursor:pointer;transition:all 0.18s ease;border:none;white-space:nowrap;text-decoration:none}
+  .bs-btn-primary{background:var(--bs-bloom)!important;color:var(--bs-white)!important}
+  .bs-btn-primary:hover{background:#e84d2e!important;transform:translateY(-1px);box-shadow:0 4px 16px rgba(255,92,59,0.32)}
+  .bs-btn-secondary{background:transparent!important;color:var(--bs-forest)!important;border:1.5px solid var(--bs-forest)!important}
+  .bs-btn-secondary:hover{background:var(--bs-forest)!important;color:var(--bs-white)!important}
+  .bs-btn-white{background:var(--bs-white)!important;color:var(--bs-forest)!important}
+  .bs-btn-white:hover{background:var(--bs-mint)!important}
+  .bs-btn-lg{font-size:16px;padding:16px 36px}
+
+  /* Trust */
+  .bs-trust-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .bs-trust-stars{display:flex;gap:2px}
+  .bs-star{width:18px;height:18px;background:#00B67A!important;border-radius:2px;position:relative}
+  .bs-star::before{content:'★';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;font-size:12px;line-height:1}
+
+  /* ===== HERO ===== */
+  .bs-hero{background:var(--bs-white)!important;padding:120px 0 64px;border-bottom:1px solid var(--bs-border)}
+  .bs-hero-inner{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:center}
+  .bs-hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--bs-mint)!important;border:1px solid var(--bs-border);border-radius:100px;padding:6px 14px;margin-bottom:20px}
+  .bs-hero-badge .bs-t-eyebrow{color:var(--bs-forest)}
+  .bs-hero-title{margin-bottom:20px}
+  .bs-hero-subtitle{font-size:18px;line-height:1.6;color:var(--bs-sapien);margin-bottom:32px;max-width:520px}
+  .bs-hero-ctas{display:flex;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+  .bs-hero-text{min-width:0}
+
+  .bs-hero-vs-card{background:var(--bs-green-grey)!important;border:1px solid var(--bs-border);border-radius:var(--bs-r-xl);padding:32px;display:flex;flex-direction:column;align-items:center;gap:20px}
+  .bs-vs-pill{display:flex;align-items:stretch;border-radius:14px;overflow:hidden;width:100%;border:1.5px solid var(--bs-border);box-shadow:0 2px 12px rgba(28,74,54,0.10)}
+  .bs-vs-pill-tnc{flex:1;background:var(--bs-forest)!important;display:flex;align-items:center;justify-content:center;padding:20px 22px}
+  .bs-vs-pill-vs{display:flex;align-items:center;justify-content:center;background:var(--bs-white)!important;padding:0 14px;font-family:var(--bs-font-body);font-size:13px;font-weight:600;color:var(--bs-sapien);border-left:1px solid var(--bs-border);border-right:1px solid var(--bs-border)}
+  .bs-vs-pill-bs{flex:1;background:var(--bs-white)!important;display:flex;align-items:center;justify-content:center;padding:20px 22px;gap:8px}
+  .bs-vs-stat-row{display:flex;gap:16px;width:100%}
+  .bs-vs-stat{flex:1;background:var(--bs-white)!important;border:1px solid var(--bs-border);border-radius:var(--bs-r-md);padding:16px;text-align:center}
+  .bs-vs-stat-number{font-family:var(--bs-font-head);font-size:22px;font-weight:800;color:var(--bs-forest);line-height:1;margin-bottom:4px}
+  .bs-vs-stat-label{font-size:11px;color:var(--bs-sapien);line-height:1.3}
+
+  /* ===== INSURER STRIP ===== */
+  .bs-insurer-strip{background:var(--bs-green-grey)!important;border-top:1px solid var(--bs-border);border-bottom:1px solid var(--bs-border);padding:20px 0}
+  .bs-insurer-strip-inner{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+  .bs-insurer-label{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--bs-sapien)}
+  .bs-insurer-logos{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center}
+  .bs-insurer-logo{font-family:var(--bs-font-head);font-size:13px;font-weight:700;color:var(--bs-sapien);opacity:0.7}
+
+  /* ===== COMPARISON TABLE ===== */
+  .bs-comparison{background:var(--bs-green-grey)!important}
+  .bs-comparison-table-wrap{border:1px solid var(--bs-border);border-radius:var(--bs-r-lg);overflow:hidden;background:var(--bs-white)!important}
+  .bs-comparison-table{width:100%;border-collapse:collapse}
+  .bs-comparison-table thead tr{background:var(--bs-forest)!important;color:var(--bs-white)}
+  .bs-comparison-table thead th{padding:18px 24px;text-align:left;font-family:var(--bs-font-head);font-size:14px;font-weight:700}
+  .bs-comparison-table thead th:first-child{width:30%}
+  .bs-col-tnc{text-align:center;color:var(--bs-forest);font-weight:600}
+  .bs-comparison-table thead .bs-col-tnc{background:#153926!important;text-align:center}
+  .bs-col-bs{text-align:center;color:#555}
+  .bs-comparison-table thead .bs-col-bs{background:#3a3a3a!important;text-align:center;opacity:0.7}
+  .bs-col-bs-neutral{text-align:center;color:#999}
+  .bs-col-bs-win{text-align:center;color:var(--bs-forest);font-weight:600}
+  .bs-comparison-table tbody tr{border-bottom:1px solid var(--bs-border)}
+  .bs-comparison-table tbody tr:last-child{border-bottom:none}
+  .bs-comparison-table tbody tr:nth-child(even){background:var(--bs-green-grey)!important}
+  .bs-comparison-table tbody td{padding:16px 24px;font-size:14px;vertical-align:top}
+  .bs-comparison-table tbody td:first-child{font-weight:600;color:var(--bs-black)}
+  .bs-comparison-note{margin-top:16px;font-size:13px;line-height:1.6;color:var(--bs-sapien)}
+
+  /* ===== STAT SECTION ===== */
+  .bs-stat-section{background:var(--bs-white)!important}
+  .bs-stat-section-inner{display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:center}
+  .bs-stat-image-col{position:relative}
+  .bs-stat-image-frame{border-radius:var(--bs-r-xl);overflow:hidden;aspect-ratio:3/4;background:var(--bs-mint)!important}
+  .bs-stat-image-frame img{width:100%;height:100%;object-fit:cover}
+  .bs-stat-badge{position:absolute;top:24px;right:-20px;background:var(--bs-forest)!important;color:var(--bs-white);border-radius:var(--bs-r-md);padding:14px 18px;min-width:160px;box-shadow:0 8px 24px rgba(28,74,54,0.25)}
+  .bs-stat-badge-number{font-family:var(--bs-font-head);font-size:28px;font-weight:800;line-height:1}
+  .bs-stat-badge-text{font-size:12px;line-height:1.4;margin-top:4px;opacity:0.85}
+  .bs-stat-checklist{list-style:none;display:flex;flex-direction:column;gap:16px}
+  .bs-stat-checklist li{display:flex;gap:12px;align-items:flex-start}
+  .bs-stat-check-icon{width:22px;height:22px;border-radius:50%;background:var(--bs-mint)!important;border:1.5px solid var(--bs-leaf);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .bs-stat-check-icon::before{content:'✓';color:var(--bs-forest);font-size:11px;font-weight:700}
+  .bs-stat-checklist-body{font-size:15px;line-height:1.6;color:var(--bs-sapien)}
+  .bs-stat-checklist-body strong{color:var(--bs-black);font-weight:600}
+
+  /* ===== INSURANCE ===== */
+  .bs-insurance{background:var(--bs-green-grey)!important}
+  .bs-insurance-inner{display:grid;grid-template-columns:1fr 480px;gap:72px;align-items:center}
+  .bs-insurance-steps{display:flex;flex-direction:column;gap:24px}
+  .bs-insurance-step{display:flex;gap:16px;align-items:flex-start}
+  .bs-step-number{width:32px;height:32px;border-radius:50%;background:var(--bs-forest)!important;color:var(--bs-white);display:flex;align-items:center;justify-content:center;font-family:var(--bs-font-head);font-size:14px;font-weight:700;flex-shrink:0}
+  .bs-step-title{font-family:var(--bs-font-head);font-size:16px;font-weight:700;color:var(--bs-black);margin-bottom:4px}
+  .bs-step-body{font-size:14px;line-height:1.55;color:var(--bs-sapien)}
+
+  /* ===== RD CARDS ===== */
+  .bs-continuity{background:var(--bs-white)!important}
+  .bs-rd-cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .bs-rd-card{border:1px solid var(--bs-border);border-radius:var(--bs-r-lg);overflow:hidden;transition:box-shadow 0.18s ease,transform 0.18s ease;background:var(--bs-white)!important}
+  .bs-rd-card:hover{box-shadow:0 8px 24px rgba(28,74,54,0.1);transform:translateY(-2px)}
+  .bs-rd-card-photo{height:180px;background:var(--bs-mint)!important;overflow:hidden}
+  .bs-rd-card-photo img{width:100%;height:100%;object-fit:cover}
+  .bs-rd-card-body{padding:16px}
+  .bs-rd-card-name{font-family:var(--bs-font-head);font-size:15px;font-weight:700;color:var(--bs-black);margin-bottom:2px}
+  .bs-rd-card-credential{font-size:12px;font-weight:600;color:var(--bs-sapien);margin-bottom:10px}
+  .bs-rd-card-stars{display:flex;align-items:center;gap:4px;margin-bottom:10px}
+  .bs-rd-card-star-row{display:flex;gap:1px}
+  .bs-rd-star{color:#00B67A!important;font-size:12px}
+  .bs-rd-card-rating-text{font-size:12px;color:var(--bs-sapien)}
+  .bs-rd-card-tags{display:flex;flex-wrap:wrap;gap:4px}
+  .bs-rd-tag{font-size:11px;font-weight:500;color:var(--bs-forest);background:var(--bs-mint)!important;border-radius:4px;padding:3px 8px;border:1px solid var(--bs-border)}
+  .bs-rd-cards-cta{margin-top:32px;text-align:center}
+
+  /* ===== REVIEWS ===== */
+  .bs-reviews{background:var(--bs-green-grey)!important}
+  .bs-reviews-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px}
+  .bs-reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .bs-review-card{background:var(--bs-white)!important;border:1px solid var(--bs-border);border-radius:var(--bs-r-lg);padding:28px}
+  .bs-review-stars{display:flex;gap:2px;margin-bottom:14px}
+  .bs-review-star{color:#00B67A!important;font-size:14px}
+  .bs-review-text{font-size:15px;line-height:1.65;color:var(--bs-black);margin-bottom:20px;font-style:italic}
+  .bs-review-attribution{display:flex;align-items:center;gap:10px}
+  .bs-review-initials{width:36px;height:36px;border-radius:50%;background:var(--bs-mint)!important;border:1.5px solid var(--bs-border);display:flex;align-items:center;justify-content:center;font-family:var(--bs-font-head);font-size:13px;font-weight:700;color:var(--bs-forest);flex-shrink:0}
+  .bs-review-name{font-size:13px;font-weight:600;color:var(--bs-black)}
+  .bs-review-source{font-size:12px;color:var(--bs-sapien)}
+  .bs-review-tp-badge{margin-left:auto}
+  .bs-tp-dot{width:18px;height:18px;background:#00B67A!important;border-radius:2px;display:flex;align-items:center;justify-content:center}
+  .bs-tp-dot::before{content:'★';color:white;font-size:10px}
+  .bs-review-condition{display:inline-block;font-size:11px;font-weight:600;color:var(--bs-forest);background:var(--bs-mint)!important;border:1px solid var(--bs-border);border-radius:4px;padding:2px 8px;margin-bottom:12px}
+
+  /* ===== FOOTER CTA ===== */
+  .bs-footer-cta{background:var(--bs-forest)!important;padding:80px 0}
+  .bs-footer-cta-inner{text-align:center}
+  .bs-footer-cta-title{font-family:var(--bs-font-head);font-size:clamp(24px,3vw,36px);font-weight:800;color:var(--bs-white);line-height:1.2;margin-bottom:12px}
+  .bs-footer-cta-subtitle{font-size:17px;color:rgba(255,255,255,0.75);margin-bottom:32px;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.55}
+  .bs-footer-cta-note{margin-top:16px;font-size:13px;color:rgba(255,255,255,0.5)}
+  .bs-footer-insurer-logos{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.15)}
+  .bs-footer-insurer-logo{font-family:var(--bs-font-head);font-size:13px;font-weight:700;color:rgba(255,255,255,0.5)}
+
+  /* ===== STICKY MOBILE CTA ===== */
+  .bs-sticky-cta-bar{display:none;position:fixed!important;bottom:0!important;top:auto!important;left:0;right:0;background:var(--bs-white)!important;border-top:1px solid var(--bs-border);padding:12px 16px;padding-bottom:max(12px,env(safe-area-inset-bottom,12px));z-index:9999!important;box-shadow:0 -4px 20px rgba(0,0,0,0.1)}
+  .bs-sticky-cta-bar .bs-btn{width:100%}
+
+  /* ===== FOOTER CSS ===== */
+  .tnc-footer{background:#0a0a0a!important;color:#fff;padding:48px 40px}
+  .tnc-footer-bottom{text-align:center}
+  .tnc-footer-logo{display:inline-block;margin-bottom:16px}
+  .tnc-footer-copyright{color:rgba(255,255,255,.5);font-size:13px;margin-bottom:8px}
+  .tnc-footer-legal{font-size:15px}
+  .tnc-footer-legal a{color:rgba(255,255,255,.7);text-decoration:none}
+  .tnc-footer-legal a:hover{color:#fff}
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:960px){
+    .bs-hero-inner{grid-template-columns:1fr}
+    .bs-hero-vs-card{max-width:400px}
+    .bs-stat-section-inner{grid-template-columns:1fr;gap:48px}
+    .bs-stat-badge{right:0}
+    .bs-stat-image-frame{max-height:320px;aspect-ratio:auto}
+    .bs-insurance-inner{grid-template-columns:1fr;gap:48px}
+    .bs-rd-cards-grid{grid-template-columns:repeat(2,1fr)}
+    .bs-reviews-grid{grid-template-columns:1fr}
+  }
+
+  @media (max-width:640px){
+    .bs-section{padding:56px 0}
+    .bs-section--lg{padding:64px 0}
+    .bs-container{padding:0 16px}
+    .bs-hero{padding:96px 0 48px}
+    .bs-hero-subtitle{font-size:16px}
+    .bs-insurer-strip-inner{gap:20px}
+    .bs-insurer-logos{gap:16px}
+    .bs-rd-cards-grid{grid-template-columns:repeat(2,1fr)}
+    .bs-comparison-table{font-size:12px}
+    .bs-comparison-table tbody td,.bs-comparison-table thead th{padding:12px 12px}
+    .bs-hero-ctas{flex-direction:column;align-items:flex-start}
+    .bs-hero-ctas .bs-btn{width:100%;text-align:center}
+    body{padding-bottom:72px}
+  }
+</style>
+
+<script is:inline>
+  // Sticky mobile CTA — JS-controlled, hidden by default
+  var stickyBar = document.querySelector('.bs-sticky-cta-bar');
+  var heroCtas = document.querySelector('.bs-hero-ctas');
+  if (stickyBar && heroCtas && window.innerWidth < 640) {
+    var observer = new IntersectionObserver(function(entries) {
+      stickyBar.style.display = entries[0].isIntersecting ? 'none' : 'block';
+    }, { threshold: 0 });
+    observer.observe(heroCtas);
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // UTM passthrough — append page query params to all CTA links
+  (function() {
+    var params = window.location.search;
+    if (!params) return;
+    document.querySelectorAll('a[href*="topnutritioncoaching.com"]').forEach(function(a) {
+      var url = new URL(a.href);
+      new URLSearchParams(params).forEach(function(v, k) { url.searchParams.set(k, v); });
+      a.href = url.toString();
+    });
+  })();
+</script>
