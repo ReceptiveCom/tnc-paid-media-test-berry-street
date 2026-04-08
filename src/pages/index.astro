@@ -43,7 +43,7 @@ const IMG = import.meta.env.DEV ? "/images" : "/c/berry-street/images";
               </div>
               <div class="bs-vs-pill-vs">vs.</div>
               <div class="bs-vs-pill-bs">
-                <img src={`${IMG}/berry-street-logo.png`} alt="Berry Street" style="height:28px;" />
+                <img src={`${IMG}/berry-street-logo.png`} alt="Berry Street" style="height:22px;width:auto;max-width:none;" />
               </div>
             </div>
 
@@ -501,7 +501,8 @@ const IMG = import.meta.env.DEV ? "/images" : "/c/berry-street/images";
   .bs-vs-pill{display:flex;align-items:stretch;border-radius:14px;overflow:hidden;width:100%;border:1.5px solid var(--bs-border);box-shadow:0 2px 12px rgba(28,74,54,0.10)}
   .bs-vs-pill-tnc{flex:1;background:var(--bs-forest)!important;display:flex;align-items:center;justify-content:center;padding:20px 22px}
   .bs-vs-pill-vs{display:flex;align-items:center;justify-content:center;background:var(--bs-white)!important;padding:0 14px;font-family:var(--bs-font-body);font-size:13px;font-weight:600;color:var(--bs-sapien);border-left:1px solid var(--bs-border);border-right:1px solid var(--bs-border)}
-  .bs-vs-pill-bs{flex:1;background:var(--bs-white)!important;display:flex;align-items:center;justify-content:center;padding:20px 22px;gap:8px}
+  .bs-vs-pill-bs{flex:1;background:var(--bs-white)!important;display:flex;align-items:center;justify-content:center;padding:20px 12px;gap:0}
+  .bs-vs-pill-bs img{max-width:none!important;height:22px;width:auto}
   .bs-vs-stat-row{display:flex;gap:16px;width:100%}
   .bs-vs-stat{flex:1;background:var(--bs-white)!important;border:1px solid var(--bs-border);border-radius:var(--bs-r-md);padding:16px;text-align:center}
   .bs-vs-stat-number{font-family:var(--bs-font-head);font-size:22px;font-weight:800;color:var(--bs-forest);line-height:1;margin-bottom:4px}
